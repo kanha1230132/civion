@@ -1,0 +1,86 @@
+{
+  "expo": {
+    "name": "CIVION",
+    "slug": "CIVION",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "config": {
+      "googleMaps": {
+        "apiKey": "AIzaSyD8G5BZegL44sB2ZTkczF4wc2VCnVhnnj4"
+      }
+    },
+    "permissions": [
+      "android.permission.CAMERA",
+      "android.permission.READ_EXTERNAL_STORAGE",
+      "android.permission.WRITE_EXTERNAL_STORAGE",
+      "android.permission.ACCESS_COARSE_LOCATION",
+      "android.permission.ACCESS_FINE_LOCATION",
+      "ACCESS_COARSE_LOCATION",
+      "ACCESS_FINE_LOCATION",
+      "FOREGROUND_SERVICE",
+      "INTERNET"
+    ],
+    "splash": {
+      "image": "./assets/images/icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.myconstruction.myapp",
+      "infoPlist": {
+        "NSCameraUsageDescription": "Allow CIVION to access your camera for photos and videos.",
+        "NSPhotoLibraryUsageDescription": "Allow CIVION to access your photo library to upload images.",
+        "ITSAppUsesNonExemptEncryption": false,
+        "UIBackgroundModes": [
+          "location"
+        ],
+        "NSLocationWhenInUseUsageDescription": "This app needs your location to provide relevant services.",
+        "NSLocationAlwaysAndWhenInUseUsageDescription": "This app needs background location access for continuous tracking.",
+        "NSAppTransportSecurity": {
+          "NSAllowsArbitraryLoads": true,
+          "NSExceptionDomains": {
+            "35.182.106.152": {
+              "NSIncludesSubdomains": true,
+              "NSTemporaryExceptionAllowsInsecureHTTPLoads": true,
+              "NSTemporaryExceptionMinimumTLSVersion": "1.0"
+            }
+          }
+        }
+      },
+      "config": {
+        "googleMapsApiKey": "AIzaSyD8G5BZegL44sB2ZTkczF4wc2VCnVhnnj4"
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "edgeToEdgeEnabled": true,
+      "package": "com.myconstruction.myapp",
+      "config": {
+        "usesCleartextTraffic": true
+      },
+      "softwareKeyboardLayoutMode": "pan"
+    },
+    "web": {
+      "favicon": "./assets/images/icon.png"
+    },
+    "plugins": [
+      "expo-asset",
+      "expo-font",
+      "expo-mail-composer",
+      "expo-localization",
+      "expo-build-properties"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "7f0d9331-a739-45af-88c1-6fc52a26b1b5"
+      }
+    }
+  }
+}
